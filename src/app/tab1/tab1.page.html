@@ -1,17 +1,58 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
+  <ion-toolbar color="light">
     <ion-title>
-      Tab 1
+      <ion-item color="light">
+      <h1>Cardápio</h1>
+    </ion-item>
     </ion-title>
+    <ion-fab-button size="medium">Mini</ion-fab-button>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content [fullscreen]="true" color="warning">
+  <ion-searchbar showCancelButton="always"></ion-searchbar>
+  <ion-list-header>
+    <ion-label>
+      <h1>Pizzas</h1>
+    </ion-label>
+  </ion-list-header>
+  <ion-list>
+    <ion-item color="warning">
+      <ion-label>Mussarela</ion-label>
+      <ion-badge color="danger">R$30,00</ion-badge>
+      <ion-thumbnail slot="start">
+        <img src="https://vipfood.com.br/wp-content/uploads/2018/08/Mussarela-light-796x800.png">
+      </ion-thumbnail>
+    </ion-item>
+    <ion-item color="warning">
+      <ion-label>Calabresa</ion-label>
+      <ion-badge color="danger">R$30,00</ion-badge>
+      <ion-thumbnail slot="start">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcTH8iIxkwNxUKTgKvv0jm3YQE6qvRRQL3jg&usqp=CAU">
+      </ion-thumbnail>
+    </ion-item>
+    <ion-item color="warning">
+      <ion-label>Marguerita</ion-label>
+      <ion-badge color="danger">R$30,00</ion-badge>
+      <ion-thumbnail slot="start">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDtOLe7Uo23BTYmrCBYw1pMBgUpL8gkBuS-A&usqp=CAU">
+      </ion-thumbnail>
+    </ion-item>
+    <ion-item color="warning">
+      <ion-label>Toscana</ion-label>
+      <ion-badge color="danger">R$30,00</ion-badge>
+      <ion-thumbnail slot="start">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSM-BMV8B_EmaQhNbuTksrO1bapF7dVLYPWHg&usqp=CAU">
+      </ion-thumbnail>
+    </ion-item>
+    <ion-item color="warning">
+      <ion-label>Chocolate</ion-label>
+      <ion-badge color="danger">R$30,00</ion-badge>
+      <ion-thumbnail slot="start">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4JvNX80Bn-XKqOUAXrJ8dFT4YoYaKKz2BbA&usqp=CAU">
+      </ion-thumbnail>
+    </ion-item>
+  </ion-list>
 
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+
 </ion-content>
